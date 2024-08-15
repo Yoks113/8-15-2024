@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irregular Student Registration</title>
+    <link rel="stylesheet" href="Irregular_styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Irregular Student Registration</h1>
+        </div>
+        <button class="homepage-btn" onclick="window.location.href='Homepage.html'">Homepage</button>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form action="#" method="post" id="irregular-form">
+                <h2>Input Subject Details</h2>
+                <div id="subject-inputs">
+                    <div class="form-group">
+                        <label for="subject-code">Subject Code:</label>
+                        <input type="text" id="subject-code" name="subject-code" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject-name">Subject Name:</label>
+                        <input type="text" id="subject-name" name="subject-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="units">Units:</label>
+                        <input type="number" id="units" name="units" min="1" max="5" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="submit-btn" onclick="addSubject()">Add Subject</button>
+                    </div>
+                </div>
+
+                <h2>Subjects List</h2>
+                <div id="subjects-list">
+                    <p>No subjects added yet.</p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>All rights reserved. 2024 unregistered</p>
+    </footer>
+
+    <script src="Irregular_script.js"></script>
+</body>
+</html>
